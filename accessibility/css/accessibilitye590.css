@@ -1,0 +1,172 @@
+/* 2020/02/19 1200px以下の画面で非表示になる設定を無効,2018/06/06の記述の一部修正 
+                @media (max-width:600px) and (min-width:400px)
+                @media (max-width:400px) and (min-width:281px)*/
+/* 2018/06/06 スマホサイズでトルグボタンのログインがアクセシビリティと重ならないよう修正
+                @media (max-width:600px)
+                @media (max-width:400px)
+                @media (max-width:281px)*/
+/* 2018/06/05 スマホサイズでトルグボタンのログインがアクセシビリティと重ならないよう修正*/
+/* 2018/06/04 文字・表示色・行間のフォント背景を白に変更*/
+/* 2018/04/27 トルグボタンクリック時のログインでアクセシビリティがクリックできない点を修正*/
+/* accessibility
+************************************************/
+.accessibility-area {
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+    text-align: right;
+    height: 30px;
+	line-height: 1em;
+	font-size: 13px;
+}
+
+/*
+@media (max-width:1200px) {
+	.accessibility-area {
+		display: none; 
+	}
+}
+
+*/
+
+/* @media (max-width:600px) { */
+@media (max-width:600px) and (min-width:400px){
+    .accessibility-area {
+        height: 30px;
+    }
+    .font-size-area {
+        float: none;
+    }
+    .style-area {
+        float: none;
+    }
+    .padding-area {
+        float: none;
+    }
+}
+/* @media (max-width:400px) { */
+@media (max-width:400px) and (min-width:281px) {
+    .accessibility-area {
+        height: 50px;
+    }
+    .font-size-area {
+        float: none;
+    }
+    .style-area {
+        float: none;
+    }
+    .padding-area {
+        float: none;
+    }
+}
+
+@media (max-width:281px) {
+    .accessibility-area {
+        height: 80px;
+    }
+    .font-size-area {
+        float: none;
+    }
+    .style-area {
+        float: none;
+    }
+    .padding-area {
+        float: none;
+    }
+}
+.font-size-area {
+	float: right;
+	margin-left: 10px;
+}
+.font-size-area p {
+	display: inline-block;
+	font-size: 13px;
+	color: #9d9d9d;
+}
+input[type="button"].font-size-btn {
+	font-size: 13px;
+	color: #000000;
+	background: #dcdcdc;
+	border: 1px solid #cdcdcd;
+	padding: 3px 3px;
+}
+input[type="button"].font-size-btn:hover {
+	background: #ffffff;
+}
+.style-area {
+	float: right;
+	margin-left: 10px;
+}
+.style-area p {
+	display: inline-block;
+	font-size: 13px;
+	color: #9d9d9d;
+}
+input[type="button"].style-white-btn {
+	font-size: 13px;
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid #cdcdcd;
+	padding: 3px 3px;
+}
+input[type="button"].style-black-btn {
+	font-size: 13px;
+	color: #ffffff;
+	background: #000000;
+	border: 1px solid #cdcdcd;
+	padding: 3px 3px;
+}
+input[type="button"].style-blue-btn {
+	font-size: 13px;
+	color: #ffffff;
+	background: #0000ff;
+	border: 1px solid #cdcdcd;
+	padding: 3px 3px;
+}
+.padding-area {
+	float: right;
+	margin-left: 10px;
+}
+.padding-area p {
+	display: inline-block;
+	font-size: 13px;
+	color: #9d9d9d;
+}
+input[type="button"].padding-btn {
+	font-size: 13px;
+	color: #000000;
+	background: #dcdcdc;
+	border: 1px solid #cdcdcd;
+	padding: 3px 3px;
+}
+input[type="button"].padding-btn:hover {
+	background: #ffffff;
+}
+/*文字・表示色・行間のフォント背景を白に変更*/
+.font-size-area p{
+	background-color: #fff ;
+    padding: 3px ;
+    color: #000 ;
+}
+.style-area p{
+    background-color: #fff ;
+    padding: 3px ;
+    color: #000 ;
+}
+.padding-area p {
+	background-color: #fff ;
+    padding: 3px ;
+    color: #000 ;
+}
+/*スマホサイズでトルグボタンのログインがアクセシビリティと重ならないよう修正*/
+ /*   
+.navbar-inverse .navbar-nav > li >a{
+        width: 86px ;
+        }
+*/
+
+/*
+navbar-inverse内にアクセシビリティが入っていない場合、
+ヘッダーの表示がおかしくなるので上記の修正を無効にしてあります。
+
+*/

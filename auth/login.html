@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="NetCommonsApp">
+	
+<!-- Mirrored from cms2.chiba-c.ed.jp/sakura-h/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Dec 2024 09:47:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>ログイン</title>
+
+		<link href="../nc_favicon6428.ico?1629180346" type="image/x-icon" rel="icon"/><link href="../nc_favicon6428.ico?1629180346" type="image/x-icon" rel="shortcut icon"/><meta name="robots" content="noindex,nofollow,noarchive"/>
+	<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/components/bootstrap/dist/css/bootstrap.min.css?1550073338"/>
+	<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css?1488292322"/>
+	<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/net_commons/style.css?1628840459"/>
+<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css?1488292322"/><link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/frames/style.css?1628837423"/><link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/pages/style.css?1628840964"/><link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/users/style.css?1628849381"/><link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/user_attributes/style.css?1628848620"/><link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/wysiwyg/style.css?1628851120"/>
+	<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/css/bootstrap.min.css?1629180346"/>
+	<link rel="stylesheet" type="text/css" href="https://cms2.chiba-c.ed.jp/sakura-h/theme/ArrowNavy/css/style.css?1610090744"/>
+
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/jquery/dist/jquery.min.js?1556745568"></script>
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/bootstrap/dist/js/bootstrap.min.js?1550073338"></script>
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/angular/angular.min.js?1603281477"></script>
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/angular-animate/angular-animate.js?1603281477"></script>
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/angular-bootstrap/ui-bootstrap-tpls.min.js?1485610379"></script>
+	<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/js/net_commons/base.js?1628840459"></script>
+
+<script>
+NetCommonsApp.constant('NC3_URL', '/sakura-h');
+NetCommonsApp.constant('LOGIN_USER', {"id":null});
+NetCommonsApp.constant('TITLE_ICON_URL', '/sakura-h');
+</script>
+
+<script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/moment/min/moment.min.js?1601982801"></script><script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/moment/min/moment-with-locales.min.js?1601982801"></script><script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js?1488292322"></script><script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/components/angular-bootstrap-datetimepicker-directive/angular-bootstrap-datetimepicker-directive.js?1430231664"></script><script type="text/javascript">
+//<![CDATA[
+NetCommonsApp.requires.push('datetimepicker');
+NetCommonsApp.config(
+    [
+      'datetimepickerProvider',
+      function(datetimepickerProvider) {
+        datetimepickerProvider.setOptions({
+          locale: moment.locale('ja'),
+          format: 'YYYY-MM-DD HH:mm',
+          sideBySide: true,
+          stepping: 5
+        });
+      }
+    ]
+);
+
+//]]>
+</script><script type="text/javascript" src="https://cms2.chiba-c.ed.jp/sakura-h/js/users/users.js?1628849381"></script>	</head>
+
+	<body ng-controller="NetCommons.base">
+		
+		
+
+<header id="nc-system-header" class="nc-system-header-nologgedin">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container clearfix text-nowrap">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nc-system-header-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+									<a href="https://cms2.chiba-c.ed.jp/sakura-h/" class="nc-page-refresh pull-left visible-xs navbar-brand"><span class="glyphicon glyphicon-arrow-left"> </span></a>					<a href="https://cms2.chiba-c.ed.jp/sakura-h/" class="nc-page-refresh pull-left hidden-xs navbar-brand"><span class="glyphicon glyphicon-arrow-left"> </span></a>				
+				<a href="https://cms2.chiba-c.ed.jp/sakura-h/" class="navbar-brand">千葉県立佐倉高等学校</a>			</div>
+			<div id="nc-system-header-navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+					
+					
+																	<li>
+							<a href="https://cms2.chiba-c.ed.jp/sakura-h/auth/login">ログイン</a>						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<div id="loading" class="nc-loading" ng-show="sending" ng-cloak>
+	<img src="https://cms2.chiba-c.ed.jp/sakura-h/img/net_commons/loading.svg?1628840459" alt=""/></div>
+
+		<main class="container" ng-init="hashChange()">
+			
+<h2>
+	ログイン</h2>
+
+	<article class="panel panel-default">
+		
+					<form action="https://cms2.chiba-c.ed.jp/sakura-h/auth_general/auth_general/login" id="AuthGeneral" ng-submit="submit($event)" novalidate="novalidate" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="c28ec333833da0d8fd7b2b347576b284ac9088c35d93d213a313edc43f75cda8e76e6c27d03cf338d962b3d15ed214c4406235623152594db6b15b0b36a01c52" id="Token956575029" autocomplete="off"/></div>
+				<div class="panel-body">
+					<div class="form-group"><label for="UserUsername" class="control-label">ログインID<strong class="text-danger h4">*</strong></label><input name="data[User][username]" placeholder="ログインIDを入力してください。" class="form-control allow-submit" type="text" id="UserUsername"/><div class="has-error"></div></div>
+					<div class="form-group"><label for="UserPassword" class="control-label">パスワード<strong class="text-danger h4">*</strong></label><input name="data[User][password]" placeholder="パスワードを入力してください。" class="form-control allow-submit" type="password" id="UserPassword"/><div class="has-error"></div></div>
+					<button class="btn btn-primary btn-block" type="submit">
+						ログイン					</button>
+
+					<hr>
+
+									</div>
+			<input type="hidden" name="data[_NetCommonsTime][user_timezone]" id="_NetCommonsTimeUserTimezone"/><input type="hidden" name="data[_NetCommonsTime][convert_fields]" value="" id="_NetCommonsTimeConvertFields"/><div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="f41798a9721799385f7e66767ee3fcf8c7c73bd9%3A_NetCommonsTime.convert_fields%7C_NetCommonsTime.user_timezone" id="TokenFields559466503" autocomplete="off"/><input type="hidden" name="data[_Token][unlocked]" value="" id="TokenUnlocked838522418" autocomplete="off"/></div></form>			</article>
+		</main>
+
+		<footer id="nc-system-footer" role="contentinfo">
+	<div class="box-footer">
+		<div class="copyright">Powered by NetCommons</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+$(function() {
+	$(document).on('keypress', 'input:not(.allow-submit)', function(event) {
+		return event.which !== 13;
+	});
+	$('article > blockquote').css('display', 'none');
+	$('<button class="btn btn-default nc-btn-blockquote"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> </button>')
+		.insertBefore('article > blockquote').on('click', function(event) {
+			$(this).next('blockquote').toggle();
+		});
+});
+</script>
+	</body>
+
+<!-- Mirrored from cms2.chiba-c.ed.jp/sakura-h/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Dec 2024 09:47:43 GMT -->
+</html>
