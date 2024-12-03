@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="NetCommonsApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>
+		千葉県立佐倉高等学校	</title>
+	<link href="/sakura-h/nc_favicon.ico?1629180346" type="image/x-icon" rel="icon"/><link href="/sakura-h/nc_favicon.ico?1629180346" type="image/x-icon" rel="shortcut icon"/><meta http-equiv="refresh" content="4" url="/sakura-h/auth/login"/>
+	<link rel="stylesheet" type="text/css" href="/nc/components/bootstrap/dist/css/bootstrap.min.css?1550073338"/>
+	<link rel="stylesheet" type="text/css" href="/nc/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css?1488292322"/>
+	<link rel="stylesheet" type="text/css" href="/nc/css/net_commons/style.css?1628840459"/>
+
+	<link rel="stylesheet" type="text/css" href="/nc/css/bootstrap.min.css?1629180346"/>
+	<link rel="stylesheet" type="text/css" href="/nc/theme/default/css/style.css?1629180346"/>
+
+	<script type="text/javascript" src="/nc/components/jquery/dist/jquery.min.js?1556745568"></script>
+	<script type="text/javascript" src="/nc/components/bootstrap/dist/js/bootstrap.min.js?1550073338"></script>
+	<script type="text/javascript" src="/nc/components/angular/angular.min.js?1603281477"></script>
+	<script type="text/javascript" src="/nc/components/angular-animate/angular-animate.js?1603281477"></script>
+	<script type="text/javascript" src="/nc/components/angular-bootstrap/ui-bootstrap-tpls.min.js?1485610379"></script>
+	<script type="text/javascript" src="/nc/js/net_commons/base.js?1628840459"></script>
+
+<script>
+NetCommonsApp.constant('NC3_URL', '/nc');
+NetCommonsApp.constant('LOGIN_USER', {"id":null});
+NetCommonsApp.constant('TITLE_ICON_URL', '/nc');
+</script>
+
+</head>
+
+<body ng-controller="NetCommons.base">
+	
+	<main class="container">
+		
+<h2 class="error-title" style="background-image: url(/sakura-h/img/net_commons/redirect_arrow.gif)">
+	Not Found</h2>
+
+
+	<div class="error-redirect">
+		ページが自動的に更新されない場合は<a href="/sakura-h/auth/login">こちら</a>をクリックしてください。	</div>
+
+
+	<script type="text/javascript">
+		setTimeout(
+			function() {
+				location.href='/sakura-h/auth/login'.replace(/&amp;/ig,"&");
+			},
+			4000		);
+	</script>
+	</main>
+
+	<footer id="nc-system-footer" role="contentinfo">
+	<div class="box-footer">
+		<div class="copyright">Powered by NetCommons</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+$(function() {
+	$(document).on('keypress', 'input:not(.allow-submit)', function(event) {
+		return event.which !== 13;
+	});
+	$('article > blockquote').css('display', 'none');
+	$('<button class="btn btn-default nc-btn-blockquote"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> </button>')
+		.insertBefore('article > blockquote').on('click', function(event) {
+			$(this).next('blockquote').toggle();
+		});
+});
+</script>
+</body>
+</html>

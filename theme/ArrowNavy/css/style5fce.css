@@ -1,0 +1,362 @@
+/* style.css */
+
+body{
+    padding-top: 50px;
+    background: linear-gradient(to top, #dee2f2, #fff);
+    background-attachment: fixed;
+}
+main.container, main.container-fluid {
+    background-color: #FFF;
+    margin-top: 0px;
+}
+.menu-header-tabs.nav-justified , .menu-footer-tabs.nav-justified{
+    margin-top: -10px ;
+    }
+
+/* header */
+.navbar-inverse {
+    background-color: #172a88;
+    border: none;
+}
+.navbar-inverse .navbar-brand{
+    color: #FFF;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: #FFF;
+}
+#container-header .plugin-photo-albums {
+    margin-top: -30px;
+}
+#container-header .plugin-photo-albums {
+    margin-bottom: 10px;
+}
+#container-header .plugin-announcements {
+    margin-top: -22px;
+}
+.plugin-accessibility{
+    margin-top: 10px;
+}
+.breadcrumb{
+    background-color: #fff;
+    margin-top: -25px;
+    margin-bottom: -20px !important;
+}
+/*-----------------------------------------*/
+/* link */
+a {
+    color: #172a88;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #172a88;
+    text-decoration: underline;
+}
+.btn-success {
+    color: #555;
+    background-color: #d3d3d3;
+    border-color: #d3d3d3;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #555;
+    background-color: #d3d3d3;
+    border-color: #d3d3d3;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #6e7dbf;
+    border-color: #6e7dbf;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #6e7dbf;
+    border-color: #6e7dbf;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: #303362;
+}
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    color: #555;
+    background-color: #eaeaea;
+    border: 1px #c9c9c9 solid;
+}
+
+.list-group-item {
+    border: 1px solid #c9c9c9;
+}
+/* item */
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    color: #555;
+    background-color: #eaeaea;
+    border-color: #c9c9c9;
+}
+/* form */
+.btn-default {
+    color: #fff;
+    background-color: #6e7dbf;
+    border-color: #6e7dbf;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #6e7dbf;
+    border-color: #6e7dbf;
+}
+.btn-info{
+    background-color: #172a88;
+    border-color: #172a88;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active{
+    background-color: #172a88;
+    border-color: #172a88;
+}
+/* 8/13 修正分 */
+@media (min-width: 768px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+} 
+@media (min-width: 768px) {
+  ul.nav li.dropup:hover > ul.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+} 
+/*-----------------------------------------*/
+.nav-tabs > li {
+    background: linear-gradient(to bottom, #fcfcfc, #ededed) ;
+}
+.nav-tabs > li > a{
+    color: #172a88 ;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    color: #172a88;
+    font-weight:bold;
+    background: linear-gradient(to bottom, #f9f9f9, #d8d8d8)  ;
+    border-radius: 0px ;
+}
+.menu-header-tabs > li.active{
+    background-color: #fff !important;
+}
+.menu-header-tabs > li{
+    border-radius: 0px !important;
+    border: none !important;
+    border-left: 1px solid #dcdcdc !important;
+    border-right: 1px solid #dcdcdc !important;
+}
+/*-----------------------------------------*/
+.nav-pills > li {
+    background: linear-gradient(to bottom, #fcfcfc, #ededed) ;
+}
+.nav-pills > li > a{
+    color: #172a88;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    color: #172a88;
+    font-weight:bold;
+}
+.menu-footer-tabs > li.active{
+    background: linear-gradient(to bottom, #f9f9f9, #d8d8d8)  !important;
+}
+.menu-footer-tabs > li{
+    border-radius: 0px !important;
+    border: none !important;
+    border-left: 1px solid #dcdcdc !important;
+    border-right: 1px solid #dcdcdc !important;
+}
+/*-----------------------------------------*/
+/* heading */
+.panel-default {
+    border: none;
+    box-shadow: none;
+}
+.panel-default>.panel-heading {
+    color: #172a88;
+    font-weight: bold;
+    background: url(arrownavy.gif) no-repeat ;
+    background-position: 7px center;
+    padding-left: 35px;
+    line-height: 10px;
+    border-bottom: 2px #172a88 solid;
+}
+.panel-primary{
+    border: none;
+    box-shadow: none;
+}
+.panel-primary>.panel-heading {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background: url(w_navy.gif) no-repeat ;
+    background-position: 7px center;
+    padding-left: 35px;
+    line-height: 10px;
+    background-color: #172a88;
+    border-radius: 0px;
+}
+.panel-info{
+    border: none;
+    box-shadow: none;
+}
+.panel-info>.panel-heading {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    line-height: 10px;
+    background-color: #172a88;
+    border-radius: 0px;
+}
+.panel-success{
+    border: none;
+    box-shadow: none;
+}
+.panel-success>.panel-heading{
+    border: none;
+    color: #172a88;
+    font-weight: bold;
+    line-height: 10px;
+    background-color: #eaeaea;
+    border-radius: 0px;
+}
+.panel-warning{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: #f9efef;
+    border: 1px #b72626 solid;
+}
+.panel-warning>.panel-heading{
+    border: none;
+    color: #b72626;
+    font-weight: bold;
+    line-height: 10px;
+    background-color: #eddede;
+    border-radius: 0px;
+    border-bottom: 1px #b72626 solid;
+}
+.panel-danger{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: #eaeaea;
+    color: #172a88;
+    border: 1px #172a88 solid;
+}
+.panel-danger>.panel-heading{
+    border: none;
+    color: #172a88;
+    font-weight: bold;
+    background-position: 5px center;
+    background-color: #eaeaea;
+    border-radius: 0px;
+    line-height: 10px;
+}
+/* 6/26 登録フォームアンケート修正分 */
+.questionnaire-select-box li{
+	color: #333;
+    	background-color: #fff;
+    	border-color: #ccc;
+}
+.questionnaire-select-box li:active {
+	color: #333;
+	background-color: #d4d4d4;
+	border-color: #8c8c8c;
+}
+.questionnaire-select-box li:hover {
+   	color: #333;
+  	background-color: #e6e6e6;
+   	border-color: #adadad;
+}
+
+.registration-select-box li{
+	color: #333;
+    	background-color: #fff;
+    	border-color: #ccc;
+}
+.registration-select-box li:active {
+	color: #333;
+	background-color: #d4d4d4;
+	border-color: #8c8c8c;
+}
+.registration-select-box li:hover {
+   	color: #333;
+  	background-color: #e6e6e6;
+   	border-color: #adadad;
+}
+/* フッター非表示 */
+#nc-system-footer {
+  	display:none;
+}
+/* ドロップダウンメニューのヘッダー非表示 */
+.dropdown-menu .dropdown-header {
+    display:none;
+}
+/* ドロップダウンメニューの横棒非表示 */
+.dropdown-menu .divider {
+    display:none;
+}
+/* 汎用データベースWYSIWYGテキスト形式での改行表示 */
+.plugin-multidatabases .table-bordered>tbody>tr>td,
+.plugin-multidatabases .table-bordered>tbody>tr>th,
+.plugin-multidatabases .table-bordered>tfoot>tr>td,
+.plugin-multidatabases .table-bordered>tfoot>tr>th,
+.plugin-multidatabases .table-bordered>thead>tr>td,
+.plugin-multidatabases .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+    word-break: break-all;
+}
+/* 小テスト修正 */
+.quiz-select-box li{
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+.quiz-select-box li:active {
+	color: #333;
+	background-color: #d4d4d4;
+	border-color: #8c8c8c;
+}
+.quiz-select-box li:hover {
+   	color: #333;
+  	background-color: #e6e6e6;
+   	border-color: #adadad;
+}
+/* 登録フォームサブタイトル改行 */
+.plugin-registrations .panel-body h1>small::before{
+	content: "\A" ;
+	white-space: pre ;
+}
